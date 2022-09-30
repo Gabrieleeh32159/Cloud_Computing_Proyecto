@@ -48,7 +48,7 @@ export default {
     async handleSubmit() {
       const login_response = await axios
         .post(
-          "http://localhost:5000/login",
+          "http://52.2.150.187:8000/login",
           {},
           {
             auth: {

@@ -30,7 +30,7 @@ export default {
 
   async created() {
     let groups_response = await axios.get(
-      "http://localhost:5000/groups?page=0",
+      "http://52.2.150.187:8001/groups?page=0",
       {
         headers: {
           Authorization: "Bearer " + localStorage.getItem("token"),

@@ -85,7 +85,7 @@ export default {
       this.error = false;
       if (this.password == this.confirm_pass) {
         await axios
-          .patch("/users/" + this.slug, {
+          .patch("http://52.2.150.187:8000/users/" + this.slug, {
             username: this.username,
             email: this.email,
             description: this.description,

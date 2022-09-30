@@ -46,7 +46,12 @@ export default {
     async handleSubmit() {
       this.error = false;
       await axios
-        .post("/user/" + this.user.id + "/group/" + this.group)
+        .post(
+          "http://52.2.150.187:8001/user/" +
+            this.user.id +
+            "/group/" +
+            this.group
+        )
         .catch((err) => {
           console.log(err);
           this.error = true;

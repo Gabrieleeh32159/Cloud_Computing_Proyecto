@@ -18,12 +18,12 @@ export default {
     //TheGroups,
   },
   async created() {
-    const users_response = await axios.get("/users");
+    const users_response = await axios.get("http://52.2.150.187:8000/users");
     const users = await users_response.data.users;
     this.$store.dispatch("users", users);
 
     if (localStorage.getItem("token" !== null)) {
-      const response = await axios.get("/user", {
+      const response = await axios.get("http://52.2.150.187:8000/user", {
         headers: {
           Authorization: "Bearer " + localStorage.getItem("token"),
         },

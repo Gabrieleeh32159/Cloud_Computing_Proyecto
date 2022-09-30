@@ -72,7 +72,7 @@ export default {
       this.error = false;
       if (this.selected_group != "") {
         await axios
-          .post("/posts", {
+          .post("http://52.2.150.187:8002/posts", {
             title: this.title,
             content: this.content,
             user_id: store.state.user.id,

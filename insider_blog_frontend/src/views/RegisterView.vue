@@ -75,7 +75,7 @@ export default {
     async handleSubmit() {
       this.error = false;
       await axios
-        .post("/users", {
+        .post("http://52.2.150.187:8000/users", {
           username: this.username,
           email: this.email,
           password: this.password,

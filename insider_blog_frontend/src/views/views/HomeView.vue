@@ -62,7 +62,7 @@ export default {
   },
 
   async created() {
-    let post_response = await axios.get("/posts", {
+    let post_response = await axios.get("http://52.2.150.187:8002/posts", {
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token"),
       },
@@ -70,11 +70,14 @@ export default {
     let posts = await post_response.data.posts;
     this.$store.dispatch("posts", posts);
 
-    let groups_response = await axios.get("/groups?page=0", {
-      headers: {
-        Authorization: "Bearer " + localStorage.getItem("token"),
-      },
-    });
+    let groups_response = await axios.get(
+      "http://52.2.150.187:8001/groups?page=0",
+      {
+        headers: {
+          Authorization: "Bearer " + localStorage.getItem("token"),
+        },
+      }
+    );
     let groups = groups_response.data.grupos;
     this.$store.dispatch("groups", groups);
   },

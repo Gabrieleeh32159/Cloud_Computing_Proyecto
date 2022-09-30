@@ -42,7 +42,7 @@ export default {
     async handleSubmit() {
       this.error = false;
       await axios
-        .post("/groups", {
+        .post("http://52.2.150.187:8001/groups", {
           headers: {
             Authorization: "Bearer " + localStorage.getItem("token"),
           },
