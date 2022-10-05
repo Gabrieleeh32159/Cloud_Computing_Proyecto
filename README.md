@@ -6,6 +6,7 @@ El nombre del proyecto es "Insider Blog"
 
 # Integrantes
 - Gabriel Espinoza
+- Kevin Huaman
 - Marcelo Zuloeta
 - Martín Pérez-Bonany
 - Paolo Vásquez
@@ -21,7 +22,6 @@ El objetivo principal del proyecto es conectar universitarios de varias casas de
 Nuestra misión es que diversos grupos de universitarios de diferentes universidades puedan conectarse con motivos de estudio o prácticas pre-profesionales.
 Nuestra visión es ser el principal portal de conectividad entre universitarios del Perú, ofreciendo un servicio simple pero efectivo y funcional.
 
-<<<<<<< HEAD
 ## Informacion acerca de las librerias/frameworks/plugins utilizadas en Front-end, Back-end y Base de datos
 ### VUE.js : Framework en javascript en el que desarrollamos todo el frontend
 #### Axios : Nuestra libreria para la comunicacion http y requests ajax
@@ -31,7 +31,7 @@ Nuestra visión es ser el principal portal de conectividad entre universitarios 
 
 ## Frontend
 -flask : Framework principal con el que hacemos la aplicacion
-=======
+
 # Informacion acerca de las librerias/frameworks/plugins utilizadas en Front-end, Back-end y Base de datos
 -vue: framework utilizado para la creación del frontend
 >>>>>>> f40b0f9f948f1ea5a7780f47a48b2781dee9a60d
